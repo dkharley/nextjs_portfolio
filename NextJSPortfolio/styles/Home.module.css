@@ -15,12 +15,11 @@
   align-items: center;
 }
 
-
-
 /* Navbar */
 .topnav {
   overflow: hidden;
   background-color: #333;
+  align-items: center;
 }
 
 .topnav a {
@@ -88,6 +87,10 @@
   float: left;
 }
 
+.fullText {
+  color: white;
+}
+
 .aboutText {
   color: white;
   font-size: 1.5em;
@@ -146,8 +149,8 @@
 }
 
 .smallProfile {
-  padding-top: 5em;
-  border-radius: 15em;
+  margin-top: 10px;
+  border-radius: 1em;
 }
 
 /* Layout */

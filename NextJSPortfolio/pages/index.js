@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import profilePic from '../assets/profile_pic.jpg'
+import mlPrepDevice from '../assets/ml-prep.png'
+import raidenGamePlay from '../assets/raiden.png'
 import smallProfile from '../assets/small_profile.jpg'
 
 export default function Home() {
@@ -9,33 +11,30 @@ export default function Home() {
     <div>
       {/* Page information */}
       <Head>
-        <title>David Harley'S Portfolio</title>
+        <title>David Harley's Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Navigation Bar */}
       <div className={styles.topnav} >
-        <Image className={styles.smallProfile} src={smallProfile} width={50} height={50} />
+        <Image className={styles.smallProfile} alt="Profile Image" src={smallProfile} width={40} height={40} />
         <h3 className={styles.navbarName}> David Harley </h3>
 
         <a href="#projects">Projects</a>
         <a href="#news">Experience</a>
         <a href="#home" >Skills</a>
         <a href="#about" className={styles.active}>About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" className="icon" onClick="myFunction()">
           <i className="fa fa-bars"></i>
         </a>
       </div>
       <div className={styles.container}>
-
-
-
         <main className={styles.main}>
-          <h3 className={styles.subTitle}> Hey There! I'm David </h3>
+          <h3 className={styles.subTitle}> Hey There! I&apos;m David </h3>
           <h1 className={styles.title}>
             I develop software and websites.
           </h1>
-          <p className={styles.aboutText}> I'm a developer commited to making engaging and polished experiences.  </p>
+          <p className={styles.aboutText}> I&apos;m a developer commited to making engaging and polished experiences.  </p>
         </main>
 
         <div className={styles.section}>
@@ -55,8 +54,7 @@ export default function Home() {
               <br />
               <br />
 
-
-              Some Technologies I've been working with lately:
+              Some Technologies I&apos;ve been working with lately:
               <br />
               <ul className={styles.descriptionText}>
                 <li>C#</li>
@@ -70,20 +68,42 @@ export default function Home() {
 
               </ul>
             </p>
-            <Image className={styles.profilePicture} src={profilePic} width={450} height={450}></Image>
+            <Image className={styles.profilePicture} src={profilePic} alt="ML Prep Device" width={450} height={450}></Image>
           </div>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.subTitle}>02. Skills</h2>
+          <p className={styles.fullText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.subTitle}>03. Experience</h2>
+          <p className={styles.fullText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
         <div className={styles.section} id="projects">
           <h2 className={styles.subTitle}>04. Projects</h2>
+          <div className={styles.grid}>
+            <Image className={styles.profilePicture} src={mlPrepDevice} alt="ML Prep Device" width={360} height={225}></Image>
+            <p className={styles.descriptionText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+            <p className={styles.descriptionText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <Image className={styles.profilePicture} src={raidenGamePlay} alt="ML Prep Device" width={442} height={249}></Image>
+
+          </div>
         </div>
 
         {/* <div className={styles.grid}>
