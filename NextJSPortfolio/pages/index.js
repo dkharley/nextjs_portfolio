@@ -17,9 +17,10 @@ export default function Home() {
 
       {/* Navigation Bar */}
       <div className={styles.topnav} >
-        <Image className={styles.smallProfile} alt="Profile Image" src={smallProfile} width={40} height={40} />
         <h3 className={styles.navbarName}> David Harley </h3>
-
+        <div className={styles.profileContainer}>
+          <Image className={styles.smallProfile} alt="Profile Image" src={smallProfile} width={50} height={50} />
+        </div>
         <a href="#projects">Projects</a>
         <a href="#news">Experience</a>
         <a href="#home" >Skills</a>
@@ -83,20 +84,41 @@ export default function Home() {
 
         <div className={styles.section}>
           <h2 className={styles.subTitle}>03. Experience</h2>
-          <p className={styles.fullText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <h3 className={styles.experienceSubtitleRight}>Hamilton Company</h3>
+          <p className={styles.fullTextRight}>
+            Developed, maintained and enhanced software that interfaces with automated liquid handling devices.
+            Worked closely with hardware and firmware teams to ensure quality deliverables.
+            Revamped and improved vision recognition systems, to increase identification accuracy and directly impact user experience.
+            Identified process bottlenecks and developed internal tools to streamline production workflow.
+            Examined the existing code base to identify unoptimized code and developed solutions to increase efficiency and improve the user experience.
+          </p>
+
+          <h3 className={styles.experienceSubtitleLeft}>Spin Games</h3>
+          <p className={styles.fullTextLeft}>Developed casino games which were deployed to web and mobile platforms.
+            Implemented frontend testing and backend simulations to ensure a reliable experience and accurate payouts.
+            Supported games in live environments, responding to issues in a timely manner as they were discovered.
+            Updated, refactored and improved the shared codebase to add new features and improve the maintainability of the source code.
+            Trained and mentored new employees, led development teams on projects to ensure quality.
+          </p>
+
+          <h3 className={styles.experienceSubtitleRight}>Hewett Packard Enterprise</h3>
+          <p className={styles.fullTextRight}>Improved existing content websites by using modern web technologies, improving design and implementing responsive features.
+            Developed websites which allow health care providers to perform essential business functions.
+            Implemented content management systems utilized on a daily basis by other employees  to update existing customer facing websites.
+            Identified and automated repetitive data entry tasks, reducing timelines from hours to minutes.
+          </p>
         </div>
 
         <div className={styles.section} id="projects">
           <h2 className={styles.subTitle}>04. Projects</h2>
           <div className={styles.grid}>
-            <Image className={styles.profilePicture} src={mlPrepDevice} alt="ML Prep Device" width={360} height={225}></Image>
-            <p className={styles.descriptionText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div className={styles.prepContainer}>
+              <Image className={styles.prepPicture} src={mlPrepDevice} alt="ML Prep Device" width={360} height={225}></Image>
+            </div>
+            <p className={styles.descriptionText}> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              Ut enim ad minim veniam, quis nostrud exerscitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
             <p className={styles.descriptionText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

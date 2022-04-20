@@ -17,9 +17,13 @@
 
 /* Navbar */
 .topnav {
+  position: fixed;
+  width: 100%;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, .9);
   align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 .topnav a {
@@ -33,12 +37,17 @@
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
+  /* color: black; */
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #04AA6D;
+  /* background-color: #04AA6D; */
   color: white;
 }
 
@@ -74,6 +83,7 @@
 .footer {
   display: flex;
   flex: 1;
+  margin-top: 24px;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
@@ -89,6 +99,24 @@
 
 .fullText {
   color: white;
+  
+}
+.fullTextLeft {
+  color: white;
+  text-align: left;
+  border-left: 2px;
+  border-left-color: white;
+  border-left-style: solid;
+  padding-left: 10px;
+}
+
+.fullTextRight {
+  color: white;
+  text-align: right;
+  border-right: 2px;
+  border-right-color: white;
+  border-right-style: solid;
+  padding-right: 10px;
 }
 
 .aboutText {
@@ -120,7 +148,16 @@
   font-size: 2rem;
   color: #04AA6D;
   text-align: left;
-  
+}
+
+.experienceSubtitleLeft {
+  text-align: left;
+  color: white;
+}
+
+.experienceSubtitleRight {
+  text-align: right;
+  color: white;
 }
 
 .title,
@@ -148,14 +185,30 @@
   border-radius: 2em;
 }
 
+.profileContainer {
+  position: absolute;
+  display: inline;
+  margin-top: 5px;
+}
+
 .smallProfile {
   margin-top: 10px;
-  border-radius: 1em;
+  padding-top: 10px;
+  border-radius: 2em;
+}
+
+.prepContainer {
+  margin-top: 20px;
+}
+
+.prepPicture {
+  margin-top: 10px;
 }
 
 /* Layout */
 .section {
   margin-top: 10em;
+  /* background-color: white; */
 }
 
 .grid {
